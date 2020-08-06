@@ -193,7 +193,7 @@ body {
     }
 
     .main {
-padding-top: 70px;
+        padding-top: 70px;
     }
 
     .video {
@@ -226,9 +226,25 @@ padding-top: 70px;
     }
 }
 
-@media (max-width: 450px) {
-.rocket {
-    max-width: 100px;
-    top: -65px;
-}
+@media (max-width: 576px) {
+    .rocket {
+        max-width: 100px;
+        top: -65px;
+        position: relative;
+    }
+
+    .footer-nav {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rocket {
+        align-self: center;
+    }
 }
